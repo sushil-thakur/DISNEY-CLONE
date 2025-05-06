@@ -1,9 +1,11 @@
-module.exports = {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'], // Adjust the path to your source files
-    theme: {
+import tailwindcssNoScrollbar from 'tailwindcss-no-scrollbar';
+
+export default {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
       extend: {},
-    },
-    plugins: [
-      require('tailwindcss-no-scrollbar'), // Add this plugin
-    ],
-  };
+  },
+  plugins: [
+      tailwindcssNoScrollbar, // For hiding scrollbars
+  ],
+};
