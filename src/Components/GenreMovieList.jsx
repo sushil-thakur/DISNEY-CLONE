@@ -1,5 +1,5 @@
 import React from 'react'
-import GenresList from './Constant/GenresList'
+import GenresList from './../Components/Constant/GenresList'
 import MovieList from './MovieList'
 
 function GenreMovieList() {

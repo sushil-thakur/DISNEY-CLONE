@@ -5,7 +5,7 @@ import { HiHome,
     HiStar,
     HiPlayCircle,
     HiTv } from "react-icons/hi2";
-import { HiPlus,HiDotsVertical } from "react-icons/hi";
+import { HiPlus,HiEllipsisVertical } from "react-icons/hi2";
 import HeaderItem from './HeaderItem';
 function Header() {
     const [toggle,setToggle]=useState(false);
@@ -50,7 +50,7 @@ function Header() {
             <HeaderItem name={''} Icon={item.icon} />
         ))}
          <div className='md:hidden' onClick={()=>setToggle(!toggle)}>       
-            <HeaderItem name={''} Icon={HiDotsVertical} />
+            <HeaderItem name={''} Icon={HiEllipsisVertical} />
            {toggle? <div className='absolute mt-3 bg-[#121212] 
             border-[1px] border-gray-700 p-3 px-5 py-4'>
             {menu.map((item,index)=>index>2&&(

@@ -40,30 +40,23 @@ function ProductionHouse() {
         },
 
     ]
-    return (
-        <div className="flex gap-5 p-5 px-10 md:px-16">
-            {productionHouseList.map((item) => (
-                <div
-                    key={item.id}
-                    className="relative w-[200px] h-[120px] md:w-[250px] md:h-[150px] border-[2px] border-gray-600 rounded-lg overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
-                >
-                    <video
-                        src={item.video}
-                        autoPlay
-                        loop
-                        playsInline
-                        muted
-                        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-0 hover:opacity-50 transition-opacity duration-300"
-                    />
-                    <img
-                        src={item.image}
-                        alt="Production House"
-                        className="w-full h-full object-cover z-[1]"
-                    />
-                </div>
-            ))}
-        </div>
-    );
+  return (
+    <div className='flex gap-2 md:gap-5 p-2 px-5 md:px-16 '>
+        {productionHouseList.map((item)=>( 
+            <div className='border-[2px] border-gray-600
+            rounded-lg hover:scale-110 transition-all duration-300
+            ease-in-out cursor-pointer relative shadow-xl 
+            shadow-gray-800
+            '>
+                 <video src={item.video} autoPlay loop playsInline muted 
+            className='absolute z-0  top-0 rounded-md 
+            opacity-0 hover:opacity-50'/> 
+                <img src={item.image} className='w-full z-[1] opacity-100' /> 
+               
+            </div>
+        ))}
+    </div>
+  )
 }
 
-export default ProductionHouse;
+export default ProductionHouse

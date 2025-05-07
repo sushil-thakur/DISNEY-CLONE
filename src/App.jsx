@@ -10,7 +10,6 @@ const App = () => {
       <Slider/>
       <ProductionHouse/>
       <GenreMovieList/>
-
     </div>
   )
 }
